@@ -22,7 +22,6 @@ class errors(commands.Cog):
                     title='Command not found',
                     description=f'Command {ctx.invoked_with} not found',
                     colour=discord.Colour.red())
-
             await ctx.send(embed=em)
 
         elif isinstance(error, commands.MissingRequiredArgument):
