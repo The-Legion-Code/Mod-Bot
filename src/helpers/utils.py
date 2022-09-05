@@ -5,6 +5,8 @@ async def time_converter(time: str):
     with contextlib.suppress(ValueError):
         dur = int(time)
         return dur*60
+    
+    week = 7  
     day = 24
     hour = 60
     minute = 60
@@ -17,7 +19,6 @@ async def time_converter(time: str):
         return 300
 
     if time[-1] == 'w':
-        week = 7
         unit *= week * day * hour * minute * second
     elif time[-1] == 'd':
         unit *= day * hour * minute * second
