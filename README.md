@@ -2,8 +2,10 @@
 
 ## Setup & Usage
 
+Server setup:<br>
 Have a role called `staff`, a role called `muted`, a channel called called `welcome`, and a channel called `starboard`
 
+Usage:<br>
 get python<br>
 install required packages `pip install -r requirements.txt`<br>
 have your bot token in an enviroment variable named `TOKEN` (I discourage you from storing your token as raw text)<br>
